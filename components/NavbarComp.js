@@ -9,13 +9,13 @@ const styles = {
     display: "grid",
     width: "100%",
     gridTemplateColumns: {
-      lg: "repeat(5,0.8fr) 1.5fr",
-      sm: "repeat(5,0.8fr) 1.65fr",
-      xs: "repeat(5,0.8fr) 1.6fr",
+      lg: "repeat(6,0.8fr) 1.5fr",
+      sm: "repeat(6,0.8fr) 1.65fr",
+      xs: "repeat(6,0.8fr) 1.6fr",
     },
     flexDirection: "row",
     a: {
-      fontSize: "16.8px",
+      fontSize: "15.8px",
       textDecoration: "none",
       color: "#fff",
       fontWeight: "500",
@@ -25,7 +25,7 @@ const styles = {
       cursor: "default",
       transition: "all 300ms cubic-bezier(0.075, 0.82, 0.165, 1)",
       ".bor": {
-        width: "70%",
+        width: "80%",
         textAlign: "center",
       },
       span: {
@@ -61,7 +61,7 @@ export default function NavbarComp() {
   return (
     <Box
       className="center1"
-      sx={{ backgroundColor: "none", width: "78%", maxWidth: "900px" }}
+      sx={{ backgroundColor: "none", width: "85%", maxWidth: "900px" }}
     >
       <Box sx={styles} className="center1">
         <Box className="nav">
@@ -71,6 +71,14 @@ export default function NavbarComp() {
           >
             <div className="bor">
               <span>About</span>
+            </div>
+          </Link>
+          <Link
+            href="/robowars"
+            className={router.pathname === "/robowars" ? "active" : ""}
+          >
+            <div className="bor">
+              <span>Robowars</span>
             </div>
           </Link>
           <Link

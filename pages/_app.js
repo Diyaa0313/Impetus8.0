@@ -39,7 +39,7 @@ const MyApp = (props) => {
     <CacheProvider value={emotionCache}>
       <ThemeProvider theme={darkTheme}>
         <Head>
-          <title>IMPETUS 7.0</title>
+          <title>IMPETUS 8.0</title>
         </Head>
         <CssBaseline />
         <LoadingStateProvider>
