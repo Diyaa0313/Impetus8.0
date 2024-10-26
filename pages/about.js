@@ -6,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import ImageListComp from "../components/ImageListComp";
 import Divider2 from "../components/Divider2";
+import AboutBox from "../components/AboutBox.js";
 
 export default function AboutPage() {
   const videoRef = useRef(null);
@@ -193,6 +194,8 @@ export default function AboutPage() {
       {/*     title="My YouTube Video" */}
       {/*   /> */}
       {/* </Box> */}
+
+      <AboutBox />
 
       <Box className="aboutImpetus center1">
         <Image
